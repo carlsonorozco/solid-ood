@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>SOLID OOD</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-background-video="img/hhkb_intro.mp4" data-background-video-loop=true data-background-video-muted=true data-background-color="#000000">
+                    <div style="background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 20px;">
+                        <h1>SOLID</h1>
+                        <h3>Object Oriented Design</h3>
+                    </div>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>What is OOD?</h2>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p><strong>Object-oriented design</strong> is the process of using an object-oriented methodology to design a computing system or application. This technique enables the implementation of a software solution based on the concepts of objects.</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>What is SOLID?</h2>
+                    </section>
+
+                    <section>
+                        <img src="img/solid_01.png" alt="" style="background: none; box-shadow: none; border: none;">
+                        <h2>SOLID?</h2>
+                    </section>
+
+                    <section>
+                        <img src="img/solid_02.jpg" alt="" style="background: none; box-shadow: none; border: none;">
+                        <h2>SOLID - LODIS - IDOLS?</h2>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p><strong>SOLID</strong> is an acronym for the first five object-oriented design (OOD) principles by <strong>Robert C. Martin</strong>, popularly known as <strong>Uncle Bob</strong>.</p>
+                        <img src="img/uncle_bob.png" style="height: 300px" alt="" style="background: none; box-shadow: none; border: none;">
+
+                        <aside class="notes">
+                            <ul>
+                                <li>Co-author of the Agile Manifesto</li>
+                            </ul>
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <h3>Basic Principles of OOD</h3>
+                    <ul>
+                        <li class="fragment fade-up"><strong>S</strong>ingle-responsiblity principle</li>
+                        <li class="fragment fade-up"><strong>O</strong>pen-closed principle</li>
+                        <li class="fragment fade-up"><strong>L</strong>iskov substitution principle</li>
+                        <li class="fragment fade-up"><strong>I</strong>nterface segregation principle</li>
+                        <li class="fragment fade-up"><strong>D</strong>ependency inversion principle</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Single-responsiblity principle</h3>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p>A class should have one, and only one, reason to change.</p>
+                        <img src="img/example_srp.jpg" style="height: 300px" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <h4>The God Object</h4>
+                        <ul>
+                            <li>A God object is an object that knows too much or does too much.</li>
+                            <li>The opposite of the SRP</li>
+                        </ul>
+                        <img src="img/god_object.jpg" style="height: 300px" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <h2>Non-compliant</h2>
+                        <img src="img/01_srp1.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <h2>Compliant</h2>
+                        <img src="img/01_srp2.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <img src="img/pawer.jpg" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Open-closed principle</h3>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p>Entities should be open for extension, but closed for modification.</p>
+                        <img src="img/example_ocp.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p>Change behavior without modifying source code...</p>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p>Avoid code rot.</p>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p>Separate extensible behavior behind an interface, and flip the dependencies.</p>
+                    </section>
+
+                    <section>
+                        <h2>Non-compliant</h2>
+                        <img src="img/02_ocp1.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <h2>Compliant</h2>
+                        <img src="img/02_ocp2.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <img src="img/pawer.jpg" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Liskov substitution principle</h3>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p>Let q(x) be a property provable about objects x of type T.</p><br>
+                        <p>Then q(y) should be provable for objects y of type S where S is a subtype of T.</p>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p>Derived classes must be substitutable for their base classes.</p>
+                    </section>
+
+                    <section>
+                        <h2>Non-compliant</h2>
+                        <img src="img/03_lsp1.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <h2>Non-compliant</h2>
+                        <img src="img/03_lsp2.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <h2>Compliant</h2>
+                        <img src="img/03_lsp3.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <img src="img/example_lsp.png" alt="" style="background: none; box-shadow: none; border: none;">
+                        <p>If it looks like a duck, quacks like a duck, but needs batteries; you probably have the wrong abstraction.</p>
+                    </section>
+
+                    <section>
+                        <img src="img/pawer.jpg" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Interface segregation principle</h3>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p>A client should not be forced to implement an interface that it doesn't use.</p>
+                    </section>
+
+                    <section>
+                        <h2>Non-compliant</h2>
+                        <img src="img/04_isp1.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <h2>Compliant</h2>
+                        <img src="img/04_isp2.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <h3>ISP Smells</h3>
+                        <p>If you implement an interface or derive from a base class and you have to throw an exception in a method because you don't support it, the interface is probably too big.</p>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <img src="img/example_isp.png" alt="" style="height: 300px; background: none; box-shadow: none; border: none;">
+                        <p>Tailor interfaces to individual client's needs.</p>
+                    </section>
+
+                    <section>
+                        <img src="img/pawer.jpg" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Dependency Inversion Principle</h3>
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <p>Depend on abstractions, not on concretions.</p>
+                    </section>
+
+                    <section>
+                        <h2>Non-compliant</h2>
+                        <img src="img/05_isp1.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <h2>Compliant</h2>
+                        <img src="img/05_isp2.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section data-background-color="#000000">
+                        <img src="img/example_dip.png" alt="" style="height: 300px; background: none; box-shadow: none; border: none;">
+                        <p>Would you solder a lamp directly to the electrical wiring in a wall?</p>
+                    </section>
+
+                    <section>
+                        <img src="img/pawer.jpg" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
