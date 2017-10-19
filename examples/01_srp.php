@@ -24,7 +24,7 @@ class Report
 
     public function formatJson()
     {
-        return $this->getContents();
+        return json_encode($this->getContents());
     }
 }
 
