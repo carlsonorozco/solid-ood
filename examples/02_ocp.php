@@ -9,6 +9,7 @@ class Programmer
         return 'coding';
     }
 }
+
 class Tester
 {
     public function test()
@@ -16,6 +17,7 @@ class Tester
         return 'testing';
     }
 }
+
 class ProjectManagement
 {
     public function process($member)
@@ -33,8 +35,8 @@ class ProjectManagement
 $programmer = new Programmer();
 $tester = new Tester();
 $project = new ProjectManagement();
-echo $project->process($programmer)
-echo $project->process($tester)
+echo $project->process($programmer);
+echo $project->process($tester);
 
 // Compliant
 
@@ -70,5 +72,5 @@ class ProjectManagement
 $programmer = new Programmer();
 $tester = new Tester();
 $project = new ProjectManagement();
-echo $project->process($programmer)
-echo $project->process($tester)
+echo $project->process($programmer);
+echo $project->process($tester);

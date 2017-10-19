@@ -11,14 +11,14 @@ class Report
 
     public function getDate()
     {
-        return '2017-10-09'
+        return '2017-10-09';
     }
 
     public function getContents()
     {
         return [
             'title' => $this->getTitle(),
-            'date' => $this->getDate(),
+            'date' => $this->getDate()
         ];
     }
 
@@ -42,14 +42,14 @@ class Report
 
     public function getDate()
     {
-        return '2017-10-09'
+        return '2017-10-09';
     }
 
     public function getContents()
     {
         return [
             'title' => $this->getTitle(),
-            'date' => $this->getDate(),
+            'date' => $this->getDate()
         ];
     }
 }
@@ -58,6 +58,7 @@ interface ReportFormattable
 {
     public function format(Report $report);
 }
+
 class JsonReportFormatter implements ReportFormattable
 {
     public function format(Report $report)
